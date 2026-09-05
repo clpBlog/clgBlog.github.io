@@ -43,14 +43,170 @@
 
     <!-- /// Modernizr ////////  -->
     <script src="js/modernizr-2.6.2.min.js"></script>
+
+    <style>
+        #pageloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .loader-img {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .loading-text {
+            margin-top: 10px;
+            color: #666;
+            font-size: 16px;
+        }
+
+        .loader-img img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .profile-card {
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            margin: 20px 0;
+        }
+
+        .profile-header {
+            margin-bottom: 30px;
+        }
+
+        .profile-header h3 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 18px;
+        }
+
+        .profile-tags {
+            margin: 15px 0;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 5px 15px;
+            margin: 5px;
+            background: #f0f0f0;
+            border-radius: 20px;
+            color: #666;
+        }
+
+        .achievements,
+        .experience,
+        .skills,
+        .projects,
+        .hobbies {
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 10px;
+            background: #f8f9fa;
+        }
+
+        .achievements h4,
+        .experience h4,
+        .skills h4,
+        .projects h4,
+        .hobbies h4 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .skill-tags,
+        .hobby-tags {
+            margin-top: 15px;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            padding: 8px 15px;
+            margin: 5px;
+            background: #007bff;
+            color: white;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .hobby-tag {
+            display: inline-block;
+            padding: 8px 15px;
+            margin: 5px;
+            background: #28a745;
+            color: white;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        ul li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #007bff;
+        }
+
+        i {
+            margin-right: 8px;
+        }
+
+        /* 移除导航栏的点点 */
+        #nav ul {
+            list-style: none;
+            /* 移除列表样式 */
+        }
+
+        #nav ul li:before {
+            content: none;
+            /* 移除 before 伪元素的内容 */
+        }
+
+        /* 保持其他列表的点点样式 */
+        .profile-card ul li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #007bff;
+        }
+    </style>
 </head>
 
 <body>
     <div id="pageloader">
         <div class="loader-img">
-            <img src="images/loader.gif" alt="">
-        </div><!-- end .loader-img -->
-    </div><!-- end .pageloader -->
+            <img src="images/loader.gif" alt="Loading...">
+            <div class="loading-text">正在加载...</div>
+        </div>
+    </div>
 
     <div id="wrap">
         <div id="header">
@@ -102,6 +258,9 @@
                         <!-- // Menu // -->
                         <ul class="sf-menu" id="menu">
                             <li>
+                                <a href="blog.html">博客</a>
+                            </li>
+                            <li>
                                 <a href="#personal-profile">个人信息</a>
                             </li>
                             <li>
@@ -140,34 +299,80 @@
                         <div class="headline">
                             <p><span>全面了解</span></p>
                             <h1>个人信息</h1>
-                        </div><!-- end .headline -->
-                    </div><!-- end .span12 -->
-                </div><!-- end .row -->
+                        </div>
+                    </div>
+                </div>
+
                 <div class="row">
-                    <div class="span5">
-                        <img class="responsive-img" src="images/Portfolio.png" height="20" alt="" style="width: 70%;">
-                    </div><!-- end .span5 -->
-                    <div class="span5">
-                        <h3 class="text-uppercase">自我介绍</h3>
-                        <p>
-                            陈烈鹏，24岁，广东汕尾人。毕业于广州软件学院。学院院优秀毕业设计三等奖，获两次奖学金
-                            <br>广州市从化区第五届科技创新创业大赛优秀奖
-                            <br>广州软件学院网络系第九期SRTP项目优秀奖
-                        </p>
-                        <p>
-                            大学期间担任院学生会新媒体干事、副班长以及是系足球队的一员
-                        </p>
-                        <p>
-                            技术栈：VueJs、ElementUI、UniApp(微信小程序)、JavaSpringBoot、NodeJs、Mysql、Linux
-                        </p>
-                        <p>
-                            实现的技术：WebSocket的实时通信、微信扫码、AI微信机器人(基于chatgpt的openAPI、讯飞星火模型)，腾讯云服务器部署项目
-                        </p>
-                        <P>
-                            兴趣爱好：足球，吉他，围棋。
-                        </P>
-                    </div><!-- end .span5 -->
-                </div><!-- end .row -->
+                    <div class="span12">
+                        <!-- 基本信息卡片 -->
+                        <div class="profile-card">
+                            <div class="profile-header text-center">
+                                <h3 class="text-uppercase">陈烈鹏</h3>
+                                <p class="subtitle">全栈开发</p>
+                            </div>
+
+                            <!-- 个人标签 -->
+                            <div class="profile-tags text-center">
+                                <span class="tag">24岁</span>
+                                <span class="tag">广东汕尾</span>
+                                <span class="tag">香港理工大学Master of Technology Entrepreneurship</span>
+                            </div>
+
+                            <!-- 荣誉成就 -->
+                            <div class="achievements">
+                                <h4><i class="fa fa-trophy"></i> 荣誉成就</h4>
+                                <ul>
+                                    <li>广州市从化区第五届科技创新创业大赛优秀奖</li>
+                                    <li>学院优秀毕业设计三等奖</li>
+                                    <li>网络系第九期SRTP项目优秀奖</li>
+                                    <li>两次三等奖奖学金</li>
+                                </ul>
+                            </div>
+
+                            <!-- 校园经历 -->
+                            <div class="experience">
+                                <h4><i class="fa fa-graduation-cap"></i> 校园经历</h4>
+                                <p>院学生会新媒体干事 | 副班长 | 系足球队队员</p>
+                            </div>
+
+                            <!-- 技术栈 -->
+                            <div class="skills">
+                                <h4><i class="fa fa-code"></i> 技术栈</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">VueJs</span>
+                                    <span class="skill-tag">ElementUI</span>
+                                    <span class="skill-tag">UniApp</span>
+                                    <span class="skill-tag">SpringBoot</span>
+                                    <span class="skill-tag">NodeJs</span>
+                                    <span class="skill-tag">MySQL</span>
+                                    <span class="skill-tag">Linux</span>
+                                </div>
+                            </div>
+
+                            <!-- 技术实现 -->
+                            <div class="projects">
+                                <h4><i class="fa fa-rocket"></i> 技术实现</h4>
+                                <ul>
+                                    <li>WebSocket实时通信</li>
+                                    <li>微信扫码功能</li>
+                                    <li>AI微信机器人(ChatGPT API/讯飞星火)</li>
+                                    <li>腾讯云服务器项目部署</li>
+                                </ul>
+                            </div>
+
+                            <!-- 兴趣爱好 -->
+                            <div class="hobbies">
+                                <h4><i class="fa fa-heart"></i> 兴趣爱好</h4>
+                                <div class="hobby-tags">
+                                    <span class="hobby-tag"><i class="fa fa-futbol-o"></i> 足球</span>
+                                    <span class="hobby-tag"><i class="fa fa-guitar"></i> 吉他</span>
+                                    <span class="hobby-tag"><i class="fa fa-chess-board"></i> 围棋</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div><!-- end #personal-profile -->
 
             <div id="work-experience">
@@ -256,25 +461,18 @@
 
                     <div class="span9">
                         <div class="cv-item">
-                            <!-- 项目图片 -->
-                            <img class="responsive-img" src="images/区域医疗1.png" height="20" alt="">
-                            <img class="responsive-img" src="images/区域医疗2.png" height="20" alt="">
-                            <img class="responsive-img" src="images/区域医疗3.png" height="20" alt="">
-                            <img class="responsive-img" src="images/区域医疗4.png" height="20" alt="">
-                            <img class="responsive-img" src="images/区域医疗5.png" height="20" alt="">
-                            <img class="responsive-img" src="images/区域医疗6.png" height="20" alt="">
-                            <img class="responsive-img" src="images/区域医疗7.png" height="20" alt="">
-                            <img class="responsive-img" src="images/区域医疗8.png" height="20" alt="">
-                            <img class="responsive-img" src="images/区域医疗9.png" height="20" alt="">
-                            <!-- <br>
-                            <h3 class="text-uppercase">计算机科学与技术学院、软件学院</h3>
-                            <p>
-                                浙江工业大学是一所综合性的浙江省属重点大学，始建于1953年，学校坐落于历史文化名城、世界著名的风景游览胜地－浙江省杭州市。
-                                <br>主修课程：C++程序设计、Java程序设计、Web应用开发、手机软件开发、计算机网络原理、操作系统原理、数据库原理及应用、数据结构、高等数学、离散数学等。
-                            </p>
-                            <br> -->
-                        </div><!-- end .cv-item -->
-                    </div><!-- end .span9 -->
+                            <!-- 区域医疗项目图片 -->
+                            <img class="responsive-img" src="images/region1.png" alt="区域医疗1">
+                            <img class="responsive-img" src="images/region2.png" alt="区域医疗2">
+                            <img class="responsive-img" src="images/region3.png" alt="区域医疗3">
+                            <img class="responsive-img" src="images/region4.png" alt="区域医疗4">
+                            <img class="responsive-img" src="images/region5.png" alt="区域医疗5">
+                            <img class="responsive-img" src="images/region6.png" alt="区域医疗6">
+                            <img class="responsive-img" src="images/region7.png" alt="区域医疗7">
+                            <img class="responsive-img" src="images/region8.png" alt="区域医疗8">
+                            <img class="responsive-img" src="images/region9.png" alt="区域医疗9">
+                        </div>
+                    </div>
                 </div><!-- end .cv-section -->
                 <!------------------------------- END SECTION 1 ------------------------------->
 
@@ -306,23 +504,15 @@
 
                     <div class="span9">
                         <div class="cv-item">
-                            <img class="responsive-img" src="images/课设1.png" height="20" alt="">
-                            <img class="responsive-img" src="images/课设2.png" height="20" alt="">
-                            <img class="responsive-img" src="images/课设3.png" height="20" alt="">
-                            <img class="responsive-img" src="images/课设4.png" height="20" alt="">
-                            <img class="responsive-img" src="images/课设5.png" height="20" alt="">
-                            <img class="responsive-img" src="images/课设6.png" height="20" alt="">
-                            <img class="responsive-img" src="images/课设7.png" height="20" alt="">
-                            <img class="responsive-img" src="images/课设8.png" height="20" alt="">
-                            <img class="responsive-img" src="images/课设9.png" height="20" alt="">
-                            <!-- <br>
-                            <h3 class="text-uppercase">理科</h3>
-                            <p>
-                                东阳中学是浙江省一级重点高中，创办于1912年原清代东白书院旧址。
-                            </p>
-                            <br> -->
-                        </div><!-- end .cv-item -->
-                    </div><!-- end .span9 -->
+                            <img class="responsive-img" src="images/design1.png" alt="毕业设计1">
+                            <img class="responsive-img" src="images/design2.png" alt="毕业设计2">
+                            <img class="responsive-img" src="images/design3.png" alt="毕业设计3">
+                            <img class="responsive-img" src="images/design4.png" alt="毕业设计4">
+                            <img class="responsive-img" src="images/design5.png" alt="毕业设计5">
+                            <img class="responsive-img" src="images/design6.png" alt="毕业设计6">
+                            <img class="responsive-img" src="images/design7.png" alt="毕业设计7">
+                        </div>
+                    </div>
                 </div><!-- end .cv-section -->
                 <!------------------------------- END SECTION 2 ------------------------------->
             </div><!-- end #education -->
@@ -358,88 +548,12 @@
                     </div><!-- end .span3 -->
 
                     <div class="span9">
-                        <img src="images/奖状1.jpg" height="250" width="320" alt="">
-                        <img src="images/奖状2.png" height="250" width="320" alt="">
-                        <img src="images/奖状3.png" height="250" width="320" alt="">
-                        <img src="images/奖状4.png" height="250" width="320" alt="">
-                        <img src="images/奖状5.png" height="250" width="320" alt="">
-
-                        <img class="responsive-img" src="images/奖状9.png" height="20" alt="">
-                        <!-- <div class="cv-item">
-                            <h3 class="text-uppercase">技能清单</h3>
-                            <p>常用软件/工具: VSCode, Git, SVN, 禅道, YApi, Jenkins, Tunnelblick, FileZilla,
-                                Foxmail, Chrome浏览器, 钉钉等。</p>
-                            <style type="text/css">
-                                table.tableizer-table {
-                                    font-size: 16px;
-                                    border: 1px solid #ccc;
-                                    font-family: Arial, Helvetica, sans-serif;
-                                }
-
-                                .tableizer-table td {
-                                    padding: 4px;
-                                    margin: 3px;
-                                    border: 1px solid #ccc;
-                                }
-
-                                .tableizer-table th {
-                                    background-color: #104E8B;
-                                    color: #fff;
-                                    font-weight: bold;
-                                }
-                            </style>
-                            <table class="tableizer-table">
-                                <thead>
-                                    <tr>
-                                        <th>编程语言</th>
-                                        <th>
-                                            熟练度
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Html/Css/Js</td>
-                                        <td>90%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>jQuery</td>
-                                        <td>80%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>VueJs</td>
-                                        <td>80%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>ExtJs</td>
-                                        <td>70%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>C#</td>
-                                        <td>70%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Java</td>
-                                        <td>60%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>NodeJs</td>
-                                        <td>60%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Weixin Mini Program</td>
-                                        <td>60%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>iOS/Android</td>
-                                        <td>20%</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            </p>
-                        </div> -->
-                        <!-- end .cv-item -->
-                    </div><!-- end .span9 -->
+                        <img src="images/award1.jpg" height="250" width="320" alt="奖状1">
+                        <img src="images/award2.png" height="250" width="320" alt="奖状2">
+                        <img src="images/award3.png" height="250" width="320" alt="奖状3">
+                        <img src="images/award4.png" height="250" width="320" alt="奖状4">
+                        <img src="images/award5.png" height="250" width="320" alt="奖状5">
+                    </div>
                 </div><!-- end .cv-section -->
             </div><!-- end #skills -->
 
@@ -579,6 +693,12 @@
            9Bi,:,,,,......                        ..r91;;;;;iirrsss1ss1111
         `, "color:#f67b29;")
         console.log("%c兄嘚！祝贺你喜提彩蛋~\n有什么可以帮助您的，欢迎微信联系我：15876748686", "color:#62d2a2;")
+    </script>
+
+    <script>
+        $(window).on('load', function () {
+            $('#pageloader').fadeOut('slow');
+        });
     </script>
 </body>
 
