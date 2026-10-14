@@ -1,0 +1,295 @@
+:root {
+  --bg-deep: #061018;
+  --bg-panel: rgba(8, 22, 38, 0.82);
+  --bg-panel-border: rgba(46, 200, 232, 0.4);
+  --accent: #2ee6ff;
+  --accent-2: #4ad4c8;
+  --accent-soft: rgba(46, 230, 255, 0.12);
+  --warn: #ffb020;
+  --text: #e2f6ff;
+  --text-muted: #7aa8c0;
+  --font-display: 'Orbitron', 'Noto Sans TC', sans-serif;
+  --font-body: 'Noto Sans TC', sans-serif;
+  --font-mono: 'Share Tech Mono', ui-monospace, monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #f5f6fa;
+  color: #333640;
+  font-family: 'Noto Sans SC', var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  touch-action: manipulation;
+}
+
+/* 三维地图页沿用深色 HUD 变量 */
+.app-shell {
+  --bg-deep: #061018;
+  --bg-panel: rgba(8, 22, 38, 0.82);
+  --bg-panel-border: rgba(46, 200, 232, 0.4);
+  --accent: #2ee6ff;
+  --accent-2: #4ad4c8;
+  --accent-soft: rgba(46, 230, 255, 0.12);
+  --warn: #ffb020;
+  --text: #e2f6ff;
+  --text-muted: #7aa8c0;
+  color: var(--text);
+  background: var(--bg-deep);
+  font-family: var(--font-body);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.maplibregl-ctrl-attrib {
+  background: rgba(6, 16, 24, 0.65) !important;
+  color: #6a90a8 !important;
+  font-size: 10px !important;
+}
+
+.maplibregl-ctrl-attrib a {
+  color: #8ec8e0 !important;
+}
+
+.maplibregl-ctrl-group {
+  background: rgba(8, 22, 38, 0.9) !important;
+  border: 1px solid rgba(46, 200, 232, 0.35) !important;
+}
+
+.maplibregl-ctrl-group button {
+  filter: invert(1) hue-rotate(160deg);
+}
+
+/* —— 回收站高科技懸浮光標 —— */
+.station-beacon {
+  position: relative;
+  width: 0;
+  height: 0;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.beacon-float {
+  position: absolute;
+  left: 0;
+  bottom: 12px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: beacon-bob 2.4s ease-in-out infinite;
+  filter: drop-shadow(0 0 10px rgba(46, 230, 255, 0.85));
+}
+
+.station-beacon.is-active .beacon-float {
+  animation-duration: 1.4s;
+  filter: drop-shadow(0 0 18px rgba(46, 230, 255, 1));
+}
+
+.beacon-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  margin-bottom: 6px;
+  padding: 4px 8px 5px;
+  background: rgba(6, 20, 36, 0.88);
+  border: 1px solid rgba(46, 230, 255, 0.65);
+  box-shadow:
+    0 0 16px rgba(46, 230, 255, 0.35),
+    inset 0 0 12px rgba(46, 230, 255, 0.08);
+  white-space: nowrap;
+  clip-path: polygon(6px 0, calc(100% - 6px) 0, 100% 50%, calc(100% - 6px) 100%, 6px 100%, 0 50%);
+  min-width: 88px;
+}
+
+.beacon-tag {
+  font-family: var(--font-mono);
+  font-size: 8px;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+}
+
+.beacon-name {
+  font-size: 11px;
+  font-weight: 600;
+  color: #e8fbff;
+  max-width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.beacon-cap {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: #7ad4c8;
+}
+
+.beacon-diamond {
+  width: 16px;
+  height: 16px;
+  background: linear-gradient(135deg, #ffffff 0%, #2ee6ff 45%, #0a8aaa 100%);
+  transform: rotate(45deg);
+  box-shadow:
+    0 0 14px #2ee6ff,
+    0 0 28px rgba(46, 230, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.station-beacon.is-active .beacon-diamond {
+  background: linear-gradient(135deg, #fff 0%, #ffb020 50%, #ff7a00 100%);
+  box-shadow:
+    0 0 16px #ffb020,
+    0 0 32px rgba(255, 176, 32, 0.7);
+}
+
+.beacon-beam {
+  width: 3px;
+  height: 42px;
+  margin-top: -2px;
+  background: linear-gradient(
+    180deg,
+    rgba(46, 230, 255, 0.95) 0%,
+    rgba(46, 230, 255, 0.35) 55%,
+    transparent 100%
+  );
+  box-shadow: 0 0 10px rgba(46, 230, 255, 0.8);
+  border-radius: 2px;
+}
+
+.station-beacon.is-active .beacon-beam {
+  height: 56px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 176, 32, 0.95) 0%,
+    rgba(46, 230, 255, 0.4) 50%,
+    transparent 100%
+  );
+}
+
+.beacon-ground {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+}
+
+.beacon-ground .ring {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border: 1.5px solid rgba(46, 230, 255, 0.75);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 8px rgba(46, 230, 255, 0.5);
+  animation: beacon-radar 2.8s linear infinite;
+}
+
+.beacon-ground .r1 {
+  width: 28px;
+  height: 28px;
+  animation-delay: 0s;
+}
+.beacon-ground .r2 {
+  width: 28px;
+  height: 28px;
+  animation-delay: 0.9s;
+}
+.beacon-ground .r3 {
+  width: 28px;
+  height: 28px;
+  animation-delay: 1.8s;
+}
+
+.beacon-ground .core {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: #2ee6ff;
+  box-shadow:
+    0 0 10px #2ee6ff,
+    0 0 22px rgba(46, 230, 255, 0.8);
+}
+
+.station-beacon.is-active .beacon-ground .ring {
+  border-color: rgba(255, 176, 32, 0.85);
+  box-shadow: 0 0 10px rgba(255, 176, 32, 0.6);
+}
+
+.station-beacon.is-active .beacon-ground .core {
+  background: #ffb020;
+  box-shadow:
+    0 0 12px #ffb020,
+    0 0 24px rgba(255, 176, 32, 0.85);
+}
+
+@keyframes beacon-bob {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-8px);
+  }
+}
+
+@keyframes beacon-radar {
+  0% {
+    width: 12px;
+    height: 12px;
+    opacity: 0.9;
+  }
+  100% {
+    width: 64px;
+    height: 64px;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 960px) {
+  .beacon-label {
+    transform: scale(0.85);
+    transform-origin: bottom center;
+  }
+  .beacon-name {
+    max-width: 100px;
+    font-size: 10px;
+  }
+  .beacon-beam {
+    height: 28px;
+  }
+  .station-beacon.is-active .beacon-beam {
+    height: 36px;
+  }
+  .beacon-diamond {
+    width: 12px;
+    height: 12px;
+  }
+}
+

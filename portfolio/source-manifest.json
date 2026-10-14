@@ -1,0 +1,68 @@
+[
+  {
+    "project": "shelfpilot",
+    "source": "app/three/store-scene.ts",
+    "sha256": "73e12db31f283e153580d27b40f5a62a75ae638243b90025e068499a8f264e5c",
+    "snapshot_date": "2026-10-14"
+  },
+  {
+    "project": "shelfpilot",
+    "source": "app/three/three-stage.ts",
+    "sha256": "1b4a7bffca9b972d20b3287d33d3f2f4caaaedf4f916f79546d1a7ad435338ff",
+    "snapshot_date": "2026-10-14"
+  },
+  {
+    "project": "shelfpilot",
+    "source": "app/three/pharmacy-template.ts",
+    "sha256": "b745241558f5a036ee5caa0beb047b02c2321378e62887bb024f1da656a94c2b",
+    "snapshot_date": "2026-10-14"
+  },
+  {
+    "project": "shelfpilot",
+    "source": "app/three/types.ts",
+    "sha256": "dd82797b72f84ef3dd75b69472b75923647edddeb075d50dfb9d5eb0e7f738d6",
+    "snapshot_date": "2026-10-14"
+  },
+  {
+    "project": "shelfpilot",
+    "source": "app/stores/contracts.ts",
+    "sha256": "7a4773a6df621274c8ff525b3c4b95d18fcce75bd4d01734553a9f7b29a952cb",
+    "snapshot_date": "2026-10-14"
+  },
+  {
+    "project": "shelfpilot",
+    "source": "lib/app-path.mjs",
+    "sha256": "61880d574f54e22a503a701c7601bd3096c3ae331f129a0cc5a4857d84e8807c",
+    "snapshot_date": "2026-10-14"
+  },
+  {
+    "project": "shelfpilot",
+    "source": "lib/render-quality.mjs",
+    "sha256": "6a31214d420fa43476f579bf08a4c34ca19fb59f0a2c89cc6736104ac89f254f",
+    "snapshot_date": "2026-10-14"
+  },
+  {
+    "project": "shelfpilot",
+    "source": "lib/pharmacy-layout.mjs",
+    "sha256": "39b965737aa88362bfc2f6dd45728b6f5a008229df50ad8714cbee78e1d07f3c",
+    "snapshot_date": "2026-10-14"
+  },
+  {
+    "project": "wastego",
+    "source": "src/vehicle.js",
+    "sha256": "cfb3ce63af77b8d08eac7afbba09e7c487db3d8b66e8454813dad0dbf4d7f556",
+    "snapshot_date": "2026-10-14"
+  },
+  {
+    "project": "wastego",
+    "source": "src/industrial.js",
+    "sha256": "c4020244c2d5310d1c7e9a6677f58c1c1666f856a192562e48d38b92488c0dce",
+    "snapshot_date": "2026-10-14"
+  },
+  {
+    "project": "wastego",
+    "source": "src/simulation.js",
+    "sha256": "a44224b13308fb334526be6d3e3f882da5243c852aa6ae0921aa7e66f8bc0875",
+    "snapshot_date": "2026-10-14"
+  }
+]

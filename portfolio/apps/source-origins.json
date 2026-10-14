@@ -1,0 +1,282 @@
+[
+  {
+    "project": "vehicle",
+    "path": "src/annotations.css",
+    "sha256": "bfd0523b7216aceaaabe3393e9f112f310dc645e7c494e21b27c96c948f22e63"
+  },
+  {
+    "project": "vehicle",
+    "path": "src/cabless.css",
+    "sha256": "fd130c7a95d80fed240e315e498f158f7c027c032a2db94f9310c2a0418633ca"
+  },
+  {
+    "project": "vehicle",
+    "path": "src/industrial.js",
+    "sha256": "c4020244c2d5310d1c7e9a6677f58c1c1666f856a192562e48d38b92488c0dce"
+  },
+  {
+    "project": "vehicle",
+    "path": "src/main.js",
+    "sha256": "18d424f9478825a614742dc6f9b15bf1de8ee25cbf4e9f6c6f5b31faea18ba34"
+  },
+  {
+    "project": "vehicle",
+    "path": "src/simulation.js",
+    "sha256": "a44224b13308fb334526be6d3e3f882da5243c852aa6ae0921aa7e66f8bc0875"
+  },
+  {
+    "project": "vehicle",
+    "path": "src/simulation.test.js",
+    "sha256": "a544f923231502d5c6f9e0f3645dd61eb3a90eea22ce52ea3c01376775ac6fe9"
+  },
+  {
+    "project": "vehicle",
+    "path": "src/studio.css",
+    "sha256": "0f3e49e149d60573012256e410c42a17a1b40110b42a139c01c108419171a83c"
+  },
+  {
+    "project": "vehicle",
+    "path": "src/style.css",
+    "sha256": "61eecbb2a832807c058ecb79b5c8cee0d185f39edd78dee085b80e5a26e3b9cb"
+  },
+  {
+    "project": "vehicle",
+    "path": "src/vehicle.js",
+    "sha256": "cfb3ce63af77b8d08eac7afbba09e7c487db3d8b66e8454813dad0dbf4d7f556"
+  },
+  {
+    "project": "vehicle",
+    "path": "src/verification.css",
+    "sha256": "9b05f92be9f681409a694e5596802d8a58778e443c8148cce2e0599d0c622092"
+  },
+  {
+    "project": "city",
+    "path": "src/App.vue",
+    "sha256": "d166500934898df99a8441f3756a346733d0a9a31a32f621d6732bafc5506cfb"
+  },
+  {
+    "project": "city",
+    "path": "src/main.ts",
+    "sha256": "af45ec30fa46c4c1f493fb098b8ede860655f154bffa037596237f3661937e5b"
+  },
+  {
+    "project": "city",
+    "path": "src/vite-env.d.ts",
+    "sha256": "b6786ab92928ce6bdf9d7f60f5db29d984a5f6fe3d5b6c52f86ceeaa7a4f21f5"
+  },
+  {
+    "project": "city",
+    "path": "src/api/cargoRecognition.ts",
+    "sha256": "0f4628cc929c4672d1e6b67765d9aef1d64366bcbec3b955127e3956a9c6b6a0"
+  },
+  {
+    "project": "city",
+    "path": "src/api/survey.ts",
+    "sha256": "25c316684f05090105f9777d985522e5eb94e5ea62a6dca0af8942c86ccaeabe"
+  },
+  {
+    "project": "city",
+    "path": "src/components/CargoInspectionScene.vue",
+    "sha256": "06fc9d6a9c156bba4444d48c677cbf085b55830ac6ef50de94c18fa834fed47c"
+  },
+  {
+    "project": "city",
+    "path": "src/components/ModelViewer.vue",
+    "sha256": "6ff132ac6edab0eda375eaeca81164e9afa04ba962d7249436beb7bde82df857"
+  },
+  {
+    "project": "city",
+    "path": "src/components/OrderDeliveryMap.vue",
+    "sha256": "2b7f2075dcd0149b9892e64f20f94d659602ca8e5f3d81aa4e4abe4d1e5ebbf4"
+  },
+  {
+    "project": "city",
+    "path": "src/components/VehicleScenePanel.vue",
+    "sha256": "899d68e70fb691b9e0b1d475e8d9fae09cad57835caa479d256a4bf756d52b5c"
+  },
+  {
+    "project": "city",
+    "path": "src/data/clearanceOrders.ts",
+    "sha256": "a153d0d52460d3fa388dde322331b2bcf763c11602b40378d85dfc026be1cd33"
+  },
+  {
+    "project": "city",
+    "path": "src/data/kowloon.ts",
+    "sha256": "e0e3e81a677cec840de32641de4bb3f69dc5b7715485d2b5498c9a73e6d6f691"
+  },
+  {
+    "project": "city",
+    "path": "src/data/lifts.ts",
+    "sha256": "3dda6c63b16b73439944e842e6a64571db33e1116f0fd6a06fe165d03b08624e"
+  },
+  {
+    "project": "city",
+    "path": "src/data/routing.ts",
+    "sha256": "60afd5acf946cc5fc19e65607a7aa76eff90d7cfee631e2400468e03eb4c6972"
+  },
+  {
+    "project": "city",
+    "path": "src/layouts/AdminLayout.vue",
+    "sha256": "9977d17265ba1558c3fceef4f72fe9e324c55eec46e553ef0d37f2c5ec4193f5"
+  },
+  {
+    "project": "city",
+    "path": "src/map/KowloonMap.ts",
+    "sha256": "acd772b49668eedf2f765448728997ec8d602a2d19a1e0b284170cfd8cfd5ad6"
+  },
+  {
+    "project": "city",
+    "path": "src/map/stationMarker.ts",
+    "sha256": "f95f9f872b462281052b84f3d1c215ebc157a3affb6c0d1d9edb4478012db650"
+  },
+  {
+    "project": "city",
+    "path": "src/router/index.ts",
+    "sha256": "764ae557cdd643494460f4f3573163486dbad77651a08d3f77a3a83569b9537a"
+  },
+  {
+    "project": "city",
+    "path": "src/styles/admin.css",
+    "sha256": "10ee15e4e4f07181f873b4a71b7fb78b9b2440119fdc8584142ef26e06d78ba5"
+  },
+  {
+    "project": "city",
+    "path": "src/styles/main.css",
+    "sha256": "1734d408347585b13d770d0f2551e22854b1aa4c9d4190443a018f38186930ce"
+  },
+  {
+    "project": "city",
+    "path": "src/vehicle/bookingRules.ts",
+    "sha256": "9eec655e6125a170b39f2aebe345a13afb0aaa9a7448674b354ceac56a8f8082"
+  },
+  {
+    "project": "city",
+    "path": "src/vehicle/cargoFurniture.js",
+    "sha256": "682476d19ab0f9ee6af8c318ec5333cc0be8fc77cac36fc3560a56f160db93b6"
+  },
+  {
+    "project": "city",
+    "path": "src/vehicle/cargoGeneratedModel.js",
+    "sha256": "745da703a6a7d44f676a9fbdc4d8836cdd0280f53263b476aced00f71dba3431"
+  },
+  {
+    "project": "city",
+    "path": "src/vehicle/cargoPhoto.js",
+    "sha256": "f02edca62b08a0c3d4a022627eeab53bf54e22a5fcab5f2254e092a38344fb25"
+  },
+  {
+    "project": "city",
+    "path": "src/vehicle/cargoPreview.ts",
+    "sha256": "9b083d6d8c348e34dd9ecbd6716e8499893ae500698e2797b291d4ef7e3f6728"
+  },
+  {
+    "project": "city",
+    "path": "src/vehicle/deliveryAnimation.ts",
+    "sha256": "a119805f0f3653e37c450ae0065441535dcf874b01aa4b0917e5f348b6fd1e63"
+  },
+  {
+    "project": "city",
+    "path": "src/vehicle/industrial.js",
+    "sha256": "6c015072e5b46daf8a5a5a245fae1dd9d4fc816edc6bfd78311766bda153c38f"
+  },
+  {
+    "project": "city",
+    "path": "src/vehicle/resources.js",
+    "sha256": "f2d3f5f76e1a656a33c52c142aa401172fd39a70062bf5e0b831079e85bb06ac"
+  },
+  {
+    "project": "city",
+    "path": "src/vehicle/routeMotion.ts",
+    "sha256": "1c3cd89a3d20689fbca31b0b9ce3103f14caf571debdd1bd42ecf3dd9efe694c"
+  },
+  {
+    "project": "city",
+    "path": "src/vehicle/simulation.d.ts",
+    "sha256": "cd5ae8669335b691176624e7b7af3bb7913d6d478f209e9eae8651a0e232ddf4"
+  },
+  {
+    "project": "city",
+    "path": "src/vehicle/simulation.js",
+    "sha256": "a44224b13308fb334526be6d3e3f882da5243c852aa6ae0921aa7e66f8bc0875"
+  },
+  {
+    "project": "city",
+    "path": "src/vehicle/types.ts",
+    "sha256": "1179efb7d3b8cb19f48cd108ed2bfb90340f701ce7a92012e24e446d819b1254"
+  },
+  {
+    "project": "city",
+    "path": "src/vehicle/vehicleMapLayer.d.ts",
+    "sha256": "88c40ac2bfac1ca1e32915643d71c8d15a114de2be2b8ddcaf88296b98b24454"
+  },
+  {
+    "project": "city",
+    "path": "src/vehicle/vehicleMapLayer.js",
+    "sha256": "26e41d365fe18c7a8d5011265da921fce2f9f8b98d9034fc891802a0f110daed"
+  },
+  {
+    "project": "city",
+    "path": "src/vehicle/vehicleModel.js",
+    "sha256": "799cf4f906015ad114aae0494697945322ff817ce553c8a266b3ca2a92fbcc96"
+  },
+  {
+    "project": "city",
+    "path": "src/vehicle/vehicleScene.d.ts",
+    "sha256": "890e114b0857643f38cf9ac9e8277c3b3bea35117674588f596a01df610de490"
+  },
+  {
+    "project": "city",
+    "path": "src/vehicle/vehicleScene.js",
+    "sha256": "40fc23674d663330cbccbb3226abd8f62d463c4ae676cb8f1fa861e69786f6cc"
+  },
+  {
+    "project": "city",
+    "path": "src/views/About.vue",
+    "sha256": "887262ca0ceb6a89b096469a1829e4f1b5ac7f15d1d007c427058fcf34540c8a"
+  },
+  {
+    "project": "city",
+    "path": "src/views/CargoPreflight.vue",
+    "sha256": "de939f95c28533d4e6158b8de95f9b7017abef9fd33b88f2a9863492fbf257d9"
+  },
+  {
+    "project": "city",
+    "path": "src/views/ClearanceOrders.vue",
+    "sha256": "dbf3283ba6b3ffda62eb128db55382136406d95186fdbe7f59e07963df6a5b8d"
+  },
+  {
+    "project": "city",
+    "path": "src/views/Home.vue",
+    "sha256": "51db246517f2984b5184409c96fd02eb3c103bc04bdf7290c356c3f98e1eadd5"
+  },
+  {
+    "project": "city",
+    "path": "src/views/KowloonTwin.vue",
+    "sha256": "953a4ed89270e40af03efe2ad5186c3d96b6df7d59aa4b7e9ca23148ab4f3968"
+  },
+  {
+    "project": "city",
+    "path": "src/views/ModelDetail.vue",
+    "sha256": "e8e9c4a4ec0660f788b1bbf93a8fa91e0ee48dbb6576af108a31ff7d7a8e3d69"
+  },
+  {
+    "project": "city",
+    "path": "src/views/ModelGallery.vue",
+    "sha256": "5412a69a7ea8a84259eb087e82f65a49bb535b56c5536c5d0cae62741d21c817"
+  },
+  {
+    "project": "city",
+    "path": "src/views/ModelPlayback.vue",
+    "sha256": "be9a6dd08b5cd63487ca2ec90a600cb5cd91a4dc187bfb57aeff7420572adb35"
+  },
+  {
+    "project": "city",
+    "path": "src/views/Placeholder.vue",
+    "sha256": "03999ff15e10bf57a2fa4228ea3b8fa1295e567e18bd526ec980106f7ac7fa74"
+  },
+  {
+    "project": "city",
+    "path": "src/views/Stations.vue",
+    "sha256": "b71643b8413ab1eacfb8cd3b6aa015fae88733240b26d0693e28ab6d47134ae3"
+  }
+]
